@@ -2,7 +2,7 @@ name: Create booking
 
 on:
   schedule:
-    # Run at 6:31 PM UTC every day (12:01 AM IST next day)
+    # Run at 6:25 and also on 6:31 PM UTC every week day (Mon-Fri) (post 12:01 AM IST next day)
     - cron: '25,31 18 * * 1-5'
   workflow_dispatch:  # Allows manual triggering
 
